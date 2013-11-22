@@ -10,8 +10,6 @@ class Bitcoin_VirtEx_Model_Payment extends Mage_Payment_Model_Method_Abstract
 	 * @var string [a-z0-9_]
 	 */
 	protected $_code = 'virtex';
-	//protected $_formBlockType = 'virtex/form';
-	//protected $_infoBlockType = 'virtex/info';
 	protected $_isInitializeNeeded = TRUE;
 	protected $_canUseCheckout = TRUE;
 	protected $_canUseInternal = FALSE;

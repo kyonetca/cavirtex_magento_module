@@ -21,7 +21,6 @@ class Bitcoin_VirtEx_PaymentController extends Mage_Core_Controller_Front_Action
 	public function ipnAction()
 	{
 		$data = file_get_contents("php://input");
-		Mage::log("Bitcoin VirtEx IPN request (raw): ".$data);
 		$j = json_decode($data, true);
 		Mage::getModel('virtex/payment')->confirmIpn($j);
 	}
